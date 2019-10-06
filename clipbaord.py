@@ -10,16 +10,18 @@ while True:
         win32clipboard.OpenClipboard()
         data = win32clipboard.GetClipboardData()
         win32clipboard.CloseClipboard()
-        m.append(data)
-        winsound.Beep(1000,200)
+        if data not in m:
+         m.append(data)
+         winsound.Beep(1000,200)
         #print(m)
         
         
 
-    elif keyboard.read_key() == "   ":
+    elif keyboard.read_key() == "tab":
        a=''
        for i in m:
         a = a + i +'#'
        print(a)
        m = []
+       winsound.Beep(500,700)
     
