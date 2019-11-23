@@ -65,7 +65,7 @@ for link in links:
         html_source = browser.page_source
         soup = BeautifulSoup(html_source, 'html.parser')
         next_button = soup.find_all(class_='next-text')
-        profiles = soup.find_all('tr', class_='artdeco-table-row unselected')
+        profiles = soup.find_all('td', class_='artdeco-models-table-cell list-people-detail-header__entity ember-view')
         profiles_list = []
         for profile in profiles:
                 full_name = profile.find_all('dt', class_='white-space-nowrap overflow-hidden text-overflow-ellipsis')

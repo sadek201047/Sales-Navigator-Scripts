@@ -13,7 +13,7 @@ while True:
         if data not in m:
          m.append(data)
          winsound.Beep(1000,200)
-        #print(m)
+        #	print(m)
         
         
 
@@ -23,5 +23,5 @@ while True:
         a = a + i +'#'
        print(a)
        m = []
-       winsound.Beep(500,700)
+       winsound.Beep(500,200)
     
